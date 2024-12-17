@@ -8,4 +8,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        outDir: "public/build", // Garante que os arquivos sejam colocados em public/build
+    },
 });
