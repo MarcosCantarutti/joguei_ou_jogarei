@@ -30,7 +30,7 @@ COPY . .
 # Instale as dependências do Composer
 RUN composer install --optimize-autoloader --no-dev
 
-RUN cp -R public/build /var/www/public/build
+# RUN cp -R public/build /var/www/public/build
 
 # Instale as dependências do Node.js e compile os ativos do Vite
 RUN npm install && npm run build
